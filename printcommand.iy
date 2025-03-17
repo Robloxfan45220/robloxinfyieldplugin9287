@@ -1,0 +1,16 @@
+local Plugin = {
+    ["PluginName"] = "printcommand",
+    ["PluginDescription"] = "Adds the print command to IY.",
+    ["Commands"] = {
+        ["print"] = {
+            ["ListName"] = "print [text]",
+            ["Description"] = "Prints text to the RDC.",
+            ["Aliases"] = {"output","prnt","rdcs"},
+            ["Function"] = function(args,speaker)
+               print(getstring(1))  
+            end
+        }
+    }
+}
+
+return Plugin
